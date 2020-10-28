@@ -50,7 +50,7 @@
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-09-12T06:46:53.505Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Android code" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RunManager">
@@ -135,10 +135,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="221" y="95" key="AndroidCreateResourceFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1599548369256" />
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1600130404049">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1603783749959">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1600130404049" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603783749959" />
     <state width="1238" height="34" key="GridCell.Tab.0.bottom" timestamp="1600153118340">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

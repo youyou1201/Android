@@ -1,56 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:ignore="MissingDefaultResource">
+
     <android.widget.GridLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:columnCount="7"
         android:rowCount="8"
-        android:columnCount="4">
+
+
+        >
+
 
         <TextView
             android:id="@+id/tV_root"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
-            android:layout_columnSpan="4"
+            android:layout_columnSpan="7"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
 
-            android:textSize="30sp" />
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/tV_result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text=""
-            android:layout_columnSpan="4"
+
+            android:layout_columnSpan="7"
+
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
-            android:textSize="30sp"
-            />
+            android:textSize="15sp" />
+
         <Button
             android:id="@+id/btn_sin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_row="0"
-            android:layout_margin="1dp"
+            android:layout_margin="3dp"
             android:layout_marginLeft="10dp"
-            android:textSize="15sp"
+
             android:fontFamily="casual"
+            android:text="sin"
             android:textAllCaps="false"
 
-            android:text="sin" />
+            android:textSize="15sp" />
 
         <Button
             android:id="@+id/btn_cos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnSpan="1"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:textAllCaps="false"
             android:textSize="15sp"
@@ -62,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_columnSpan="1"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:textAllCaps="false"
             android:textSize="15sp"
@@ -70,25 +79,24 @@
             android:text="tan" />
 
         <Button
-            android:id="@+id/btn_00"
+            android:id="@+id/btn_lg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
+            android:textAllCaps="false"
             android:textSize="15sp"
 
-            />
-
+            android:layout_columnSpan="1"
+            android:text="help" />
         <Button
             android:id="@+id/btn_AC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="AC"
-            android:layout_marginLeft="10dp"
             android:textSize="15sp"
 
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             />
 
@@ -98,22 +106,12 @@
             android:layout_height="wrap_content"
             android:text="back"
             android:textSize="15sp"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             />
 
 
-        <Button
-            android:id="@+id/btn_lg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:textAllCaps="false"
-            android:textSize="15sp"
 
-            android:layout_columnSpan="1"
-            android:text="help" />
         <Button
             android:id="@+id/btn_division"
             android:layout_width="wrap_content"
@@ -121,29 +119,57 @@
             android:text="÷"
             android:textSize="15sp"
 
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             />
+        <Button
+            android:id="@+id/btn_cm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
 
+            android:layout_margin="3dp"
+            android:fontFamily="casual"
+            android:text="cm" />
+        <Button
+            android:id="@+id/btn_mm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+
+            android:layout_margin="3dp"
+            android:fontFamily="casual"
+            android:text="mm^3" />
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+
+            android:layout_margin="3dp"
+            android:fontFamily="casual"
+            android:text="2进制" />
 
         <Button
             android:id="@+id/btn_7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:layout_marginLeft="10dp"
             android:textSize="15sp"
 
-            android:layout_row="5"
-            android:layout_column="0"
             android:text="7" />
 
         <Button
             android:id="@+id/btn_8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:textSize="15sp"
 
@@ -155,7 +181,7 @@
             android:textSize="15sp"
 
 
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:text="9" />
 
@@ -166,20 +192,50 @@
             android:textSize="15sp"
 
 
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:text="×" />
+        <Button
+            android:id="@+id/btn_dm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+
+            android:layout_margin="3dp"
+            android:fontFamily="casual"
+            android:text="dm" />
+
+        <Button
+            android:id="@+id/btn_cm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+
+            android:layout_margin="3dp"
+            android:fontFamily="casual"
+            android:text="cm^3" />
+        <Button
+            android:id="@+id/btn16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+
+            android:layout_margin="3dp"
+            android:fontFamily="casual"
+            android:text="16进制" />
 
         <Button
             android:id="@+id/btn_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="6"
-            android:layout_column="0"
             android:layout_marginLeft="10dp"
             android:textSize="15sp"
 
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:text="4" />
 
@@ -187,9 +243,7 @@
             android:id="@+id/btn_5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="6"
-            android:layout_column="1"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:textSize="15sp"
 
@@ -199,25 +253,51 @@
             android:id="@+id/btn_6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="6"
-            android:layout_column="2"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:textSize="15sp"
 
             android:fontFamily="casual"
             android:text="6" />
-
         <Button
             android:id="@+id/btn_sub"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_row="6"
-            android:layout_column="3"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:textSize="15sp"
 
             android:text="-" />
+        <Button
+            android:id="@+id/btn_m"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
+
+            android:layout_margin="3dp"
+            android:fontFamily="casual"
+            android:text="m" />
+        <Button
+            android:id="@+id/btn_dm3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+
+            android:layout_margin="3dp"
+            android:fontFamily="casual"
+            android:text="dm^3" />
+        <Button
+            android:id="@+id/btn10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+
+            android:layout_margin="3dp"
+            android:fontFamily="casual"
+            android:text="10进制" />
         <Button
             android:id="@+id/btn_3"
             android:layout_width="wrap_content"
@@ -225,7 +305,7 @@
             android:layout_marginLeft="10dp"
             android:textSize="15sp"
 
-            android:layout_margin="5dp"
+            android:layout_margin="7dp"
             android:fontFamily="casual"
             android:text="3" />
 
@@ -233,7 +313,7 @@
             android:id="@+id/btn_2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:textSize="15sp"
 
@@ -243,7 +323,7 @@
             android:id="@+id/btn_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:textSize="15sp"
 
@@ -253,128 +333,22 @@
             android:id="@+id/btn_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
+            android:layout_margin="3dp"
             android:fontFamily="casual"
             android:textSize="15sp"
 
             android:text="+" />
-        <Button
-            android:id="@+id/btn_point"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:textSize="15sp"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="." />
-
-        <Button
-            android:id="@+id/btn_0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="0" />
-
-        <Button
-            android:id="@+id/btn_kh"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="(  )" />
-
-        <Button
-            android:id="@+id/btn_equal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="=" />
-        <Button
-            android:id="@+id/btn_cm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-            android:layout_marginLeft="10dp"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="cm" />
-
-        <Button
-            android:id="@+id/btn_dm"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="dm" />
-
-        <Button
-            android:id="@+id/btn_m"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="m" />
-
         <Button
             android:id="@+id/btn_km"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:textAllCaps="false"
+            android:layout_marginLeft="10dp"
 
-            android:layout_margin="5dp"
+            android:layout_margin="1dp"
             android:fontFamily="casual"
             android:text="km" />
-
-        <Button
-            android:id="@+id/btn_mm3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="mm^3" />
-        <Button
-            android:id="@+id/btn_cm3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="cm^3" />
-
-        <Button
-            android:id="@+id/btn_dm3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="dm^3" />
-
         <Button
             android:id="@+id/btn_m3"
             android:layout_width="wrap_content"
@@ -382,42 +356,9 @@
             android:textSize="15sp"
             android:textAllCaps="false"
 
-            android:layout_margin="5dp"
+            android:layout_margin="1dp"
             android:fontFamily="casual"
             android:text="m^3" />
-        <Button
-            android:id="@+id/btn2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="2进制" />
-
-        <Button
-            android:id="@+id/btn16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="16进制" />
-
-        <Button
-            android:id="@+id/btn10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:textAllCaps="false"
-
-            android:layout_margin="5dp"
-            android:fontFamily="casual"
-            android:text="10进制" />
-
         <Button
             android:id="@+id/btn8"
             android:layout_width="wrap_content"
@@ -428,9 +369,48 @@
             android:layout_margin="1dp"
             android:fontFamily="casual"
             android:text="8进制" />
+        <Button
+            android:id="@+id/btn_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+
+            android:layout_margin="1dp"
+            android:fontFamily="casual"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btn_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+
+            android:layout_margin="1dp"
+            android:fontFamily="casual"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_kh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+
+            android:layout_margin="1dp"
+            android:fontFamily="casual"
+            android:text="(  )" />
+
+        <Button
+            android:id="@+id/btn_equal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+
+            android:layout_margin="1dp"
+            android:fontFamily="casual"
+            android:text="=" />
+
 
 
     </android.widget.GridLayout>
-
-
 </RelativeLayout>
