@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="616dp">
+
+        <SeekBar
+            android:id="@+id/bar"
+            android:layout_width="320dp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="20dp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="32dp"
+        android:text="播放"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pause"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:text="暂停"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="651dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="651dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/pre"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:text="上一曲"
+        tools:layout_editor_absoluteX="247dp"
+        tools:layout_editor_absoluteY="651dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:text="下一曲"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="651dp"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
